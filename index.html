@@ -62,7 +62,8 @@ button{font-family:inherit;cursor:pointer}
 .hero h1 .line2{display:block;font-size:.62em;margin-top:2px}
 .grade{display:inline-block;margin-top:8px;background:var(--sun);color:#5C3D00;font-family:var(--fun);font-weight:800;font-size:16px;padding:4px 16px;border-radius:999px;border:3px solid #fff;box-shadow:var(--shadow)}
 .hero p.lead{font-size:19px;color:var(--ink);margin:12px 0 0;background:var(--bg2);display:inline-block;padding:8px 16px;border-radius:999px;box-shadow:var(--shadow)}
-.teacher{display:inline-flex;align-items:center;gap:10px;margin-top:14px;background:var(--c4t);border:3px dashed var(--purple);border-radius:999px;padding:6px 16px 6px 8px;font-weight:800;font-family:var(--display);color:var(--ink)}
+.teacher.principal{background:#FFF3D6;border-color:var(--orange)}
+.teacher{display:inline-flex;margin-inline-end:8px;align-items:center;gap:10px;margin-top:14px;background:var(--c4t);border:3px dashed var(--purple);border-radius:999px;padding:6px 16px 6px 8px;font-weight:800;font-family:var(--display);color:var(--ink)}
 .teacher i{width:36px;height:36px;border-radius:50%;background:var(--purple);display:grid;place-items:center;font-style:normal;color:#fff}
 .namebox{margin-top:14px;background:var(--bg2);border:3px dashed var(--blue);border-radius:22px;padding:10px 14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;max-width:520px}
 .namebox .ic{width:40px;height:40px;border-radius:50%;background:var(--blue);display:grid;place-items:center;color:#fff;flex:none}
@@ -211,8 +212,8 @@ footer b{font-family:var(--fun);color:var(--ink);font-size:17px}
 #cert .txt b{color:#1F8A4C}
 #cert .stars{display:flex;gap:10px;margin-top:10px}
 #cert .stars svg{width:44px;height:44px}
-#cert .sig{margin-top:auto;display:flex;justify-content:space-between;width:100%;font-size:18px;font-weight:800}
-#cert .sig span{border-top:3px dotted #9B6BFF;padding-top:8px;min-width:260px}
+#cert .sig{margin-top:auto;display:flex;justify-content:space-between;gap:16px;width:100%;font-size:17px;font-weight:800}
+#cert .sig span{border-top:3px dotted #9B6BFF;padding-top:8px;min-width:200px;text-align:center}
 #cert .kidc{position:absolute;left:80px;bottom:130px;z-index:2}
 #sheet .key{width:205px;border-radius:20px;padding:6px 10px;background:#fff;border:3px dashed #9B6BFF;display:flex;align-items:center;gap:8px;text-align:right;font-family:var(--body);font-size:10.5px;line-height:1.35;color:#2B3A5C}
 #sheet .key b{display:block;font-family:var(--fun);font-size:13px;color:#6A3FD6;line-height:1.2;margin-bottom:2px}
@@ -257,7 +258,7 @@ footer b{font-family:var(--fun);color:var(--ink);font-size:17px}
 #sheet .tip{width:215px;border-radius:20px;padding:10px 16px;font-family:var(--body);font-size:12.5px;line-height:1.45;color:#2B3A5C;position:relative;background:#fff;border:3px dashed #2DC2B5}
 #sheet .tip b{display:block;font-family:var(--fun);font-size:15px;color:#1F8A4C}
 #sheet .ft{margin-top:8px;display:flex;justify-content:space-between;gap:10px;font-family:var(--body);font-size:11.5px;color:#4A5A7A;align-items:center;position:relative}
-#sheet .ft b{font-family:var(--fun);font-size:14px;color:#2B3A5C;background:#fff;border-radius:999px;padding:3px 14px;border:3px dashed #9B6BFF}
+#sheet .ft b{font-family:var(--fun);font-size:13px;color:#2B3A5C;background:#fff;border-radius:999px;padding:3px 12px;border:3px dashed #9B6BFF;white-space:nowrap}#sheet .ft b.pr{border-color:#FF9A3D}#sheet .ft span{font-size:10.5px}
 @media (max-width:760px){.hero .wrap{grid-template-columns:1fr}.kid{width:min(62%,240px)}.sunball{left:auto;right:6%;top:8px;width:50px;height:50px}.cl1{left:30%;top:10px}.cl2{right:6%;bottom:40px}.d-rainbow{right:auto;left:16%;top:6px;width:64px;opacity:.9}.d-bulb{display:none}.hero{padding-block:62px 56px}.d-pencil{display:none}.d-book{display:none}.words{grid-template-columns:repeat(2,1fr);gap:18px 12px}.card .w{font-size:22px}.hero h1{font-size:clamp(38px,11vw,54px)}}
 @media (max-width:400px){.words{grid-template-columns:repeat(2,1fr)}.card{padding:16px 8px 10px}.card .row{flex-direction:column;align-items:stretch}}
 :focus-visible{outline:3px solid var(--sun);outline-offset:2px}
@@ -283,7 +284,7 @@ footer b{font-family:var(--fun);color:var(--ink);font-size:17px}
       <h1 class="bubble"><span class="w1">بنك</span> <span class="w2">لغة</span> <span class="w3">الإشارة</span><span class="line2"><span class="w4">لكلمات دروس لُغَتي</span></span></h1>
       <div class="grade">📘 لُغَتي · الصف الثالث الابتدائي</div>
       <p class="lead">افتح الدرس، امسح الباركود، شاهد الإشارة وقلّدها، واجمع النجوم!</p>
-      <div><div class="teacher"><i aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg></i>المعلمة: أ. تغريد الشويلي</div></div>
+      <div><div class="teacher"><i aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg></i>المعلمة: أ. تغريد الشويلي</div> <div class="teacher principal"><i aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></i>مديرة المدرسة: أ. شريفه العليان</div></div>
       <div class="namebox">
         <div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg></div>
         <label for="studentName">اسمي:</label>
@@ -382,7 +383,7 @@ footer b{font-family:var(--fun);color:var(--ink);font-size:17px}
 <div id="cert" aria-hidden="true"></div>
 
 <footer><div class="wrap">
-  <div><b>إعداد المعلمة: أ. تغريد الشويلي</b></div>
+  <div><b>إعداد المعلمة: أ. تغريد الشويلي</b> · <b>مديرة المدرسة: أ. شريفه العليان</b></div>
   <div>الباركودات مستخرجة من مكتبة لغة الإشارة السعودية (sshi.sa) لأغراض تعليمية · 2026</div>
 </div></footer>
 
@@ -406,7 +407,7 @@ footer b{font-family:var(--fun);color:var(--ink);font-size:17px}
 <script>
 (function(){
 const DATA = JSON.parse(document.getElementById('data').textContent);
-const TEACHER = "أ. تغريد الشويلي"; const SITE_URL = "https://bushra-w.github.io/lughati-sign-bank/";
+const TEACHER = "أ. تغريد الشويلي"; const PRINCIPAL = "أ. شريفه العليان"; const SITE_URL = "https://bushra-w.github.io/lughati-sign-bank/";
 function siteQR(px){ try{ if(typeof qrcode==="undefined") return ""; const q=qrcode(0,"M"); q.addData(SITE_URL); q.make(); const cell=Math.max(2,Math.round(px/q.getModuleCount())); return `<img src="${q.createDataURL(cell,2)}" alt="مفتاح بنك الإشارة" width="${px}" height="${px}">`; }catch(e){ return ""; } }
 const COLORS = {c1:['#3F8CFF','#1F5FD1','#E1EEFF'],c2:['#36B36B','#1F8A4C','#E2F7E8'],c3:['#FF9A3D','#D36A0F','#FFEFDD'],c4:['#9B6BFF','#6A3FD6','#EFE8FF']};
 const CANDY = ['#3F8CFF','#FF6FA8','#6CC644','#9B6BFF','#FF9A3D','#2DC2B5'];
@@ -522,7 +523,7 @@ function buildSheet(l){
   </div>
   <div class="grid" style="grid-template-columns:repeat(${cols},minmax(0,1fr))">${cards}</div>
   <div class="bottom"><div class="notes"><b>ملاحظاتي ✎</b><i></i><i></i><i></i></div>${(k=>k?`<div class="key">${k}<span><b>🔑 مفتاح بنك الإشارة</b>امسحه لتفتح كل كلمات لُغَتي بالإشارة</span></div>`:'')(siteQR(76))}<div class="tip"><b>كيف ألعب بالورقة؟</b>امسح الباركود بالجوال وشاهد الإشارة، قلّدها بيدك، ثم لوّن نجمة تحت الكلمة في كل مرة تتدرب عليها!</div></div>
-  <div class="ft"><b>المعلمة: ${esc(TEACHER)}</b><span>الباركودات من مكتبة لغة الإشارة السعودية (sshi.sa) لأغراض تعليمية</span><span>2026</span></div>`;
+  <div class="ft"><b>المعلمة: ${esc(TEACHER)}</b><b class="pr">مديرة المدرسة: ${esc(PRINCIPAL)}</b><span>الباركودات من مكتبة لغة الإشارة السعودية (sshi.sa) لأغراض تعليمية</span><span>2026</span></div>`;
 }
 let downloads = null; if(window.claude && window.claude.use) window.claude.use('downloads').then(d=>{downloads=d}).catch(()=>{});
 const isPhone = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || (navigator.maxTouchPoints>1 && /Mac/.test(navigator.platform));
@@ -578,7 +579,7 @@ $('#randBtn').addEventListener('click', e=>{ if(!current) return; const pool=cur
 /* certificate */
 function buildCert(l){ const dt=new Date().toLocaleDateString('ar-SA-u-nu-arab',{year:'numeric',month:'long',day:'numeric'}); const nm=studentName()||'بطل الإشارة';
   $('#cert').innerHTML = `<div class="bg"><svg viewBox="0 0 1123 794" width="1123" height="794"><rect width="1123" height="794" fill="#DDF1FF"/><g fill="#fff"><ellipse cx="160" cy="140" rx="90" ry="30"/><circle cx="130" cy="122" r="34"/><circle cx="186" cy="112" r="42"/><ellipse cx="980" cy="200" rx="80" ry="26"/><circle cx="954" cy="184" r="30"/><circle cx="1000" cy="176" r="36"/><ellipse cx="900" cy="660" rx="90" ry="28"/><circle cx="870" cy="644" r="32"/><circle cx="924" cy="636" r="38"/></g><circle cx="1010" cy="110" r="46" fill="#FFC83D"/><g fill="#FFC83D" stroke="#fff" stroke-width="2"><path d="M120 420l7 15 16 2-12 11 3 16-14-8-14 8 3-16-12-11 16-2z"/><path d="M1000 400l7 15 16 2-12 11 3 16-14-8-14 8 3-16-12-11 16-2z"/><path d="M560 120l5 10 11 1-8 8 2 11-10-5-10 5 2-11-8-8 11-1z"/></g><g fill="#FF6FA8" stroke="#fff" stroke-width="2"><path d="M200 640l5 10 11 1-8 8 2 11-10-5-10 5 2-11-8-8 11-1z"/><path d="M940 520l5 10 11 1-8 8 2 11-10-5-10 5 2-11-8-8 11-1z"/></g><path d="M0 794v-70c200-40 400-40 560-10s360 30 563-10v90z" fill="#9BE28A"/><path d="M0 794v-36c220-26 420-20 560 0s340 14 563-14v50z" fill="#6CC644"/></svg></div><div class="frame"></div><div class="frame2"></div>
-  <div class="in"><div class="ttl">بنك لغة الإشارة</div><h1>شهادة نجم الإشارة</h1><div style="font-size:22px;font-weight:800">تُمنح هذه الشهادة إلى</div><div class="nm">${avatar?avatar+' ':''}${esc(nm)}</div><div class="txt">لإتقانه كل كلمات <b>${esc(l.kind)}: ${esc(l.name)}</b> (${l.words.length} كلمة) بلغة الإشارة<br>من لُغَتي · الصف الثالث الابتدائي — ${esc(l.ch.num)}: ${esc(l.ch.title)}<br>أحسنت، استمر في التألق! 🌟</div><div class="stars">${STAR.replace('currentColor','#FFC83D').repeat(5)}</div><div class="sig"><span>المعلمة: ${esc(TEACHER)}</span><span>التاريخ: ${dt}</span></div></div><div class="kidc">${KID}</div>`; }
+  <div class="in"><div class="ttl">بنك لغة الإشارة</div><h1>شهادة نجم الإشارة</h1><div style="font-size:22px;font-weight:800">تُمنح هذه الشهادة إلى</div><div class="nm">${avatar?avatar+' ':''}${esc(nm)}</div><div class="txt">لإتقانه كل كلمات <b>${esc(l.kind)}: ${esc(l.name)}</b> (${l.words.length} كلمة) بلغة الإشارة<br>من لُغَتي · الصف الثالث الابتدائي — ${esc(l.ch.num)}: ${esc(l.ch.title)}<br>أحسنت، استمر في التألق! 🌟</div><div class="stars">${STAR.replace('currentColor','#FFC83D').repeat(5)}</div><div class="sig"><span>المعلمة: ${esc(TEACHER)}</span><span>مديرة المدرسة: ${esc(PRINCIPAL)}</span><span>التاريخ: ${dt}</span></div></div><div class="kidc">${KID}</div>`; }
 async function downloadCert(){ if(!current) return; const btn=$('#certBtn'); btn.disabled=true; const label=btn.querySelector('span'); const old=label.textContent; label.textContent='جارٍ تجهيز الشهادة…';
   try{ if(document.fonts && document.fonts.ready) await document.fonts.ready; buildCert(current);
     const canvas = await html2canvas($('#cert'), {scale:2, backgroundColor:'#DDF1FF', useCORS:true, logging:false});
